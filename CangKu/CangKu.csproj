@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ZZY\MainController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -169,8 +170,8 @@
     <Folder Include="Controllers\CJW\" />
     <Folder Include="Controllers\TLP\" />
     <Folder Include="Controllers\TZ\" />
-    <Folder Include="Controllers\ZZY\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Main\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
