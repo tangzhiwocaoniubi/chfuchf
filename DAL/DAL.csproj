@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CJW\JSDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ZZY\Class1.cs" />
   </ItemGroup>
@@ -55,7 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BCY\" />
-    <Folder Include="CJW\" />
     <Folder Include="TLP\" />
     <Folder Include="TZ\" />
   </ItemGroup>
