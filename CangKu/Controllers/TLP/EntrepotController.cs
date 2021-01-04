@@ -4,17 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace CangKu.Controllers.ZZY
+namespace CangKu.Controllers.TLP
 {
-    public class MainController : Controller
+    public class EntrepotController : Controller
     {
-        // GET: Main
+        // GET: Entrepot
         public ActionResult Index()
-        {
-            return View();
-        }
-
-        public ActionResult Index11()
         {
             return View();
         }
