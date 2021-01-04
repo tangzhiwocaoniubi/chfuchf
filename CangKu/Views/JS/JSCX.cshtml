@@ -9,22 +9,43 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <link href="~/Scripts/layui/css/layui.css" rel="stylesheet" />
     <title>JSCX</title>
 </head>
 <body>
     <table border="1">
+        <tr>
+            <td>员工编号</td>
+            <td>用户名</td>
+            <td>密码</td>
+            <td>员工姓名</td>
+            <td>邮箱</td>
+            <td>手机号</td>
+            <td>登录次数</td>
+            <td>部门编号</td>
+            <td>职位编号</td>
+            <td>入职时间</td>
+            <td>离职时间</td>
+            <td>是否删除</td>
+            <td></td>
+        </tr>
         @foreach (var q in Model)
         {
-            <tr>
-                <td>员工编号<span>@q.ygNumber</span></td>
-                <td>用户名<span>@q.LoginName</span></td>
-                <td>密码<span>@q.loginPwd</span></td>
-                <td>员工姓名<span>@q.ygName</span></td>
-                <td>邮箱<span>@q.email</span></td>
-                <td>手机号<span>@q.phone</span></td>
-                <td>登录次数<span>@q.LoginNum</span></td>
-                <td></td>
-            </tr>
+        <tr>
+            <td>@q.ygNumber</td>
+            <td>@q.LoginName</td>
+            <td>@q.loginPwd</td>
+            <td>@q.ygName</td>
+            <td>@q.email</td>
+            <td>@q.phone</td>
+            <td>@q.LoginNum</td>
+            <td>@q.BmNum</td>
+            <td>@q.ZwNum</td>
+            <td>@q.CreateTime</td>
+            <td>@q.EndTime</td>
+            <td>@q.isDel</td>
+        </tr>
         }
         </table>
 </body>
