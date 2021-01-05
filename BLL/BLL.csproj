@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BCY\locationManager.cs" />
     <Compile Include="CJW\JSBLL.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -56,7 +57,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BCY\" />
     <Folder Include="TLP\" />
     <Folder Include="TZ\" />
     <Folder Include="ZZY\" />
