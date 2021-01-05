@@ -222,6 +222,7 @@
                                     <table border="1" cellpadding="0" cellspacing="0" class="table table-striped table-hover">
                                         <thead>
                                             <tr>
+                                                <td><input id="Checkbox1" type="checkbox" /></td>
                                                 <td>入库编号</td>
                                                 <td>入库类型</td>
                                                 <td>供应商</td>
@@ -268,6 +269,7 @@
     //窗体加载事件
     $(function () {
         GetputWaAll();
+
     });
     //转换Data类型
     function GetTime(op) {
@@ -284,7 +286,7 @@
             data: "{}",
             success: function (result) {
                 $.each(result, function (index, data) {
-                    $("#tb1").append("<tr><td>" + data.receiptNum + "</td><td>" + data.receiptTypeNum + "</td><td>" + data.supplierNum + "</td><td>" + data.orderNo + "</td><td>" + data.totalNum + "</td><td>" + data.ygNumber + "</td><td>" + data.examineState + "</td><td>" + data.OperationMode + "</td><td>" + GetTime(data.createTime) + "</td><td><a href='#' onclick='return Del(" + data.receiptNum +")'>删除</a></td></tr>");
+                    $("#tb1").append("<tr><td><input id='Checkbox1' type='checkbox' /></td><td>" + data.receiptNum + "</td><td>" + data.receiptTypeNum + "</td><td>" + data.supplierNum + "</td><td>" + data.orderNo + "</td><td>" + data.totalNum + "</td><td>" + data.ygNumber + "</td><td>" + data.examineState + "</td><td>" + data.OperationMode + "</td><td>" + GetTime(data.createTime) + "</td><td><a href='#' onclick='return Del("+data.receiptNum +")'>删除</a></td></tr>");
                 });
             },
             error: function (ex) {
@@ -317,5 +319,9 @@
         }
         return false;
     }
+
+
+
+
 </script>
 
