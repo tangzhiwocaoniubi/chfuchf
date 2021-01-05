@@ -41,10 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BCY\locationManager.cs" />
     <Compile Include="CJW\JSBLL.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TLP\putWarehourseManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
@@ -57,7 +57,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BCY\" />
+    <Folder Include="TLP\" />
     <Folder Include="TZ\" />
     <Folder Include="ZZY\" />
   </ItemGroup>

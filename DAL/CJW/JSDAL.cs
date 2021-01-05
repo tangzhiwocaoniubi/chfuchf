@@ -16,5 +16,12 @@ namespace DAL.CJW
             CKSJKEntities cjw = new CKSJKEntities();
             return cjw.Staff.ToList();
         }
+
+        public static int YGAdd(Staff w)
+        {
+            CKSJKEntities q = new CKSJKEntities();
+            q.Staff.Add(w);
+            return q.SaveChanges();
+        }
     }
 }

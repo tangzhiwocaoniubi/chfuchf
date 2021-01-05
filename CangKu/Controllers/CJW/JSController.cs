@@ -14,12 +14,20 @@ namespace CangKu.Controllers.CJW
         {
             return View();
         }
-        public ActionResult JSCX()
-        {
+        /// <summary>
+        /// 主页面
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult YGGL() {
             JSBLL qw = new JSBLL();
             List<Staff> q = qw.GetAll();
 
             return View(q);
+        }
+        //新增页面试图
+        public ActionResult insert()
+        {
+            return View();
         }
     }
 }

@@ -16,6 +16,9 @@ namespace BLL.CJW
             return q.GetAll();
         }
 
-
+        public static int YGAdd(Staff w)
+        {
+            return JSDAL.YGAdd(w);
+        }
     }
 }

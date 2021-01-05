@@ -13,5 +13,10 @@ namespace CangKu.Controllers.ZZY
         {
             return View();
         }
+
+        public ActionResult Index11()
+        {
+            return View();
+        }
     }
 }

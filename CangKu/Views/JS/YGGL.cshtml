@@ -1,0 +1,356 @@
+﻿
+@{
+    Layout = null;
+}
+@model List<MODEL.Staff>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>后台管理系统-HTML5后台管理系统</title>
+    <meta name="keywords" content="设置关键词..." />
+    <meta name="description" content="设置描述..." />
+    <meta name="author" content="DeathGhost" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">
+    <link href="~/css/style.css" rel="stylesheet" />
+    <script src="~/javascript/jquery.js"></script>
+    <script src="~/javascript/plug-ins/customScrollbar.min.js"></script>
+    <script src="~/javascript/plug-ins/echarts.min.js"></script>
+    <script src="~/javascript/plug-ins/layerUi/layer.js"></script>
+    <script src="~/editor/ueditor.config.js"></script>
+    <script src="~/editor/ueditor.all.js"></script>
+    <script src="~/javascript/plug-ins/pagination.js"></script>
+    <script src="~/javascript/public.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <link href="~/Scripts/layui/css/layui.css" rel="stylesheet" />
+    <link href="~/layui/css/layui.css" rel="stylesheet" />
+    <script src="~/layui/layui.js"></script>
+
+</head>
+<body>
+    <div class="main-wrap">
+        <div class="side-nav">
+            <div class="side-logo">
+                <div class="logo">
+                    <span class="logo-ico">
+                        <i class="i-l-1"></i>
+                        <i class="i-l-2"></i>
+                        <i class="i-l-3"></i>
+                    </span>
+                    <strong>龟田仓库后台管理系统</strong>
+                </div>
+            </div>
+
+            <nav class="side-menu content mCustomScrollbar" data-mcs-theme="minimal-dark">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <i class="icon-columns"></i>系统设置<i class="icon-angle-right"></i>
+                            </dt>
+                            <dd>
+                                <a href="">员工管理</a>
+                            </dd>
+                            <dd>
+                                <a href="flow-layout.html">角色管理</a>
+                            </dd>
+                            <dd>
+                                <a href="flex-layout.html">部门管理</a>
+                            </dd>
+                            <dd>
+                                <a href="flow-layout.html">菜单管理</a>
+                            </dd>
+                            <dd>
+                                <a href="flex-layout.html">权限分配</a>
+                            </dd>
+                            <dd>
+                                <a href="flow-layout.html">标识符管理</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <i class="icon-columns"></i>基本资料<i class="icon-angle-right"></i>
+                            </dt>
+                            <dd>
+                                <a href="flex-layout.html">库位管理</a>
+                            </dd>
+                            <dd>
+                                <a href="flow-layout.html">供应商管理</a>
+                            </dd>
+                            <dd>
+                                <a href="flex-layout.html">客户管理</a>
+                            </dd>
+                            <dd>
+                                <a href="flow-layout.html">计量单位</a>
+                            </dd>
+                            <dd>
+                                <a href="flex-layout.html">产品类别</a>
+                            </dd>
+                            <dd>
+                                <a href="flow-layout.html">产品管理</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <i class="icon-inbox"></i>仓库作业<i class="icon-angle-right"></i>
+                            </dt>
+                            <dd>
+                                <a href="button.html">入库管理</a>
+                            </dd>
+                            <dd>
+                                <a href="button.html">出库管理</a>
+                            </dd>
+                            <dd>
+                                <a href="button.html">报损管理</a>
+                            </dd>
+                            <dd>
+                                <a href="button.html">移库管理</a>
+                            </dd>
+                            <dd>
+                                <a href="button.html">盘点管理</a>
+                            </dd>
+                            <dd>
+                                <a href="button.html">退货管理</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <i class="icon-table"></i>报表管理<i class="icon-angle-right"></i>
+                            </dt>
+                            <dd>
+                                <a href="table.html">库存清单</a>
+                            </dd>
+                            <dd>
+                                <a href="table.html">货品统计</a>
+                            </dd>
+                            <dd>
+                                <a href="table.html">出入库报表</a>
+                            </dd>
+                            <dd>
+                                <a href="table.html">入库报表</a>
+                            </dd>
+                            <dd>
+                                <a href="table.html">出库报表</a>
+                            </dd>
+                            <dd>
+                                <a href="table.html">报损报表</a>
+                            </dd>
+                            <dd>
+                                <a href="table.html">退货报表</a>
+                            </dd>
+                            <dd>
+                                <a href="table.html">客户报表</a>
+                            </dd>
+                            <dd>
+                                <a href="table.html">供应商报表</a>
+                            </dd>
+                            <dd>
+                                <a href="table.html">台账记录</a>
+                            </dd>
+                            <dd>
+                                <a href="table.html">自定义报表</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <h2>
+                        <a href="index.html" class="InitialPage"><i class="icon-dashboard"></i>退出系统</a>
+                    </h2>
+                </ul>
+            </nav>
+
+
+
+        </div>
+        <div class="content-wrap">
+            <header class="top-hd">
+                <div class="hd-lt">
+                    <a class="icon-reorder"></a>
+                </div>
+                <div class="hd-rt">
+                    <ul>
+                        <li>
+                            <a><i class="icon-user"></i>管理员:<em>DeathGhost</em></a>
+                        </li>
+                        <li>
+                            <a><i class="icon-bell-alt"></i>系统消息</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" id="JsSignOut"><i class="icon-signout"></i>安全退出</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            
+            <main class="main-cont content mCustomScrollbar">
+                <div class="page-wrap">
+                    <!--开始::内容-->
+                    <section class="page-hd">
+                        <header>
+                            <h2 class="title">
+                                <i class="layui-icon">&#xe66f;</i>员工管理
+                            </h2>
+                            <A>111111</A>
+                            <div>
+                                <input id="Text1" placeholder="请输入用户名" type="text" style="border-radius:5px;height:34px;width:200px;" />
+                                <a href="" class="layui-btn layui-btn-radius layui-btn-normal" style="border-radius:5px;width:90px;height:40px;">
+                                    <i class="layui-icon">&#xe615;</i>查询
+                                </a>
+                                <a href="" class="layui-btn layui-btn-radius layui-btn-warm" style="border-radius:5px;width:90px;height:40px;">
+                                    <i class="layui-icon">&#xe642;</i>新增
+                                </a>
+                                <a href="" class="layui-btn layui-btn-radius layui-btn-danger" style="border-radius:5px;width:90px;height:40px;">
+                                    <i class="layui-icon">&#xe640;</i>删除
+                                </a>
+                            </div>
+                            
+                            <p class="title-description">
+
+                            </p>
+                        </header>
+                        <hr>
+                    </section>
+                 
+                    <div class="panel panel-default">
+                            <table class="table table-striped table-bordered">
+                                <tr class="widge-title">
+                                    <td><input id="Checkbox1" type="checkbox" /></td>
+                                    <td >员工编号</td>
+                                    <td >用户名</td>
+                                    <td >密码</td>
+                                    <td >员工姓名</td>
+                                    <td >邮箱</td>
+                                    <td >手机号</td>
+                                    <td >登录次数</td>
+                                    <td >部门编号</td>
+                                    <td >职位编号</td>
+                                    <td >入职时间</td>
+                                    <td >离职时间</td>
+                                    <td >是否删除</td>
+                                    
+                                </tr>
+                                @foreach (var q in Model)
+                                {
+                            <tr>
+                                <td><input id="Checkbox1" type="checkbox" /></td>
+                                <td>@q.ygNumber</td>
+                                <td>@q.LoginName</td>
+                                <td>@q.loginPwd</td>
+                                <td>@q.ygName</td>
+                                <td>@q.email</td>
+                                <td>@q.phone</td>
+                                <td>@q.LoginNum</td>
+                                <td>@q.BmNum</td>
+                                <td>@q.ZwNum</td>
+                                <td>@q.CreateTime</td>
+                                <td>@q.EndTime</td>
+                                <td>@q.isDel</td>
+                            </tr>
+                                }
+                            </table>
+                           
+                    </div>
+                    <!--开始::结束-->
+                </div>
+            </main>
+            <footer class="btm-ft">
+                <p class="clear">
+                    <span class="fl">©Copyright 2020 <a href="#" title="DeathGhost" target="_blank">DeathGhost.cn</a></span>
+                    <span class="fr text-info">
+                        <em class="uppercase">
+                            <i class="icon-user"></i>
+
+                        </em> |
+                        <em class="uppercase">
+                            <i class="icon-envelope-alt"></i>
+
+                        </em>
+                        <a onclick="reciprocate()" class="text-primary"><i class="icon-qrcode"></i>捐赠</a>
+                    </span>
+                </p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        $('#a1').click(function () {
+            layer.alert('内容')
+        });
+        $('#a2').click(function () {
+            layer.confirm('您是如何看待前端开发？', {
+                btn: ['重要', '奇葩'] //按钮
+            }, function () {
+                layer.msg('的确很重要', { icon: 1 });
+            }, function () {
+                layer.msg('也可以这样', {
+                    time: 20000, //20s后自动关闭
+                    btn: ['明白了', '知道了']
+                });
+            });
+        });
+        $('#a3').click(function () {
+            layer.msg('玩命提示中');
+        });
+        $('#a4').click(function () {
+            var index = layer.load(0, { shade: false }); //0代表加载的风格，支持0-2
+            setTimeout(function () {
+                layer.closeAll('loading');
+            }, 2000);
+        });
+        $('#a5').click(function () {
+            //小tips
+            layer.tips('我是另外一个tips，只不过我长得跟之前那位稍有些不一样。', '#a5', {
+                tips: [1, '#76d4f5'],
+                time: 4000
+            });
+        });
+        $('#a6').click(function () {
+            //tab层
+            layer.tab({
+                area: ['600px', '300px'],
+                tab: [{
+                    title: 'TAB1',
+                    content: '内容1'
+                }, {
+                    title: 'TAB2',
+                    content: '内容2'
+                }, {
+                    title: 'TAB3',
+                    content: '内容3'
+                }]
+            });
+        });
+        $('#a7').click(function () {
+            layer.open({
+                type: 2,
+                title: false,
+                closeBtn: 0, //不显示关闭按钮
+                shade: [0],
+                area: ['340px', '215px'],
+                offset: 'rb', //右下角弹出
+                time: 2000, //2秒后自动关闭
+                anim: 2,
+                content: ['#', 'no'], //iframe的url，no代表不显示滚动条
+                end: function () { //此处用于演示
+                    layer.open({
+                        type: 2,
+                        title: '很多时候，我们想最大化看，比如像这个页面。',
+                        shadeClose: true,
+                        shade: false,
+                        maxmin: true, //开启最大化最小化按钮
+                        area: ['893px', '600px'],
+                        content: '#/'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
