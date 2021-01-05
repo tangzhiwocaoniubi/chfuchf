@@ -14,5 +14,9 @@ namespace BLL.BCY
         {
             return locationService.QueryLocation();
         }
+        public static IQueryable queryAllsupplier()
+        {
+            return locationService.queryAllsupplier();
+        }
     }
 }

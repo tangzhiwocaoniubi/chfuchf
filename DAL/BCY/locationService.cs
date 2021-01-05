@@ -26,5 +26,24 @@ namespace DAL.BCY
                       };
             return obj;
         }
+        public static IQueryable queryAllsupplier()
+        {
+            CKSJKEntities entit = new CKSJKEntities();
+            var obj = from p in entit.supplier
+                      select new
+                      {
+                          supplierNum = p.supplierNum,
+                          supplierName = p.supplierName,
+                          supplierLeix = p.supplierLeix,
+                          phone = p.phone,
+                          chuanzhen = p.chuanzhen,
+                          email = p.email,
+                          contacts = p.contacts,
+                          address = p.address,
+                          contents = p.contents,
+                          isDel = p.isDel
+                      };
+            return obj;
+        }
     }
 }
