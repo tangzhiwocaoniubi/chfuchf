@@ -695,6 +695,7 @@
     <Content Include="Views\Entrepot\Index.cshtml" />
     <Content Include="Views\JS\YGGL.cshtml" />
     <Content Include="Views\BCY\Index.cshtml" />
+    <Content Include="Views\JS\YGinsert.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
