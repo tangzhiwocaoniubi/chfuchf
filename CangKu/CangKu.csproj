@@ -124,6 +124,7 @@
     <Compile Include="Controllers\CJW\JSController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TLP\EntrepotController.cs" />
+    <Compile Include="Controllers\TZ\LoginController.cs" />
     <Compile Include="Controllers\ZZY\MainController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -140,6 +141,7 @@
     <Content Include="css\plug-ins\font-awesome.min.css" />
     <Content Include="css\reset.css" />
     <Content Include="css\style.css" />
+    <Content Include="css\styley.css" />
     <Content Include="editor\dialogs\anchor\anchor.html" />
     <Content Include="editor\dialogs\attachment\attachment.css" />
     <Content Include="editor\dialogs\attachment\attachment.html" />
@@ -420,6 +422,7 @@
     <Content Include="images\icon\favicon.ico" />
     <Content Include="images\wechat_qrcode.jpg" />
     <Content Include="javascript\jquery.js" />
+    <Content Include="javascript\jquery.min.js" />
     <Content Include="javascript\pages\public.js" />
     <Content Include="javascript\plug-ins\customScrollbar.min.js" />
     <Content Include="javascript\plug-ins\echarts.min.js" />
@@ -434,6 +437,7 @@
     <Content Include="javascript\plug-ins\layerUi\skin\default\loading-2.gif" />
     <Content Include="javascript\plug-ins\pagination.js" />
     <Content Include="javascript\public.js" />
+    <Content Include="javascript\script.js" />
     <Content Include="layui\css\layui.css" />
     <Content Include="layui\css\layui.mobile.css" />
     <Content Include="layui\css\modules\code.css" />
@@ -696,10 +700,10 @@
     <Content Include="Views\Entrepot\Index.cshtml" />
     <Content Include="Views\JS\YGGL.cshtml" />
     <Content Include="Views\BCY\Index.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\TZ\" />
     <Folder Include="Models\" />
     <Folder Include="upload\" />
     <Folder Include="Views\Main\" />

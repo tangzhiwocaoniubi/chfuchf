@@ -45,6 +45,7 @@
     <Compile Include="CJW\JSBLL.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TZ\LoginBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
@@ -58,7 +59,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TLP\" />
-    <Folder Include="TZ\" />
     <Folder Include="ZZY\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

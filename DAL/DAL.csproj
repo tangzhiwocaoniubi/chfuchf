@@ -48,6 +48,8 @@
     <Compile Include="BCY\locationService.cs" />
     <Compile Include="CJW\JSDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TZ\BaoBiaoDAL.cs" />
+    <Compile Include="TZ\LoginDAL.cs" />
     <Compile Include="ZZY\Class1.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,7 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TLP\" />
-    <Folder Include="TZ\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
