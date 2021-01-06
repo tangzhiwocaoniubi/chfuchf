@@ -9,6 +9,10 @@ namespace DAL.BCY
 {
     public class locationService
     {
+        /// <summary>
+        /// 库位表
+        /// </summary>
+        /// <returns></returns>
         public static IQueryable QueryLocation()
         {
             CKSJKEntities entit = new CKSJKEntities();
@@ -26,6 +30,10 @@ namespace DAL.BCY
                       };
             return obj;
         }
+        /// <summary>
+        /// 供应商表
+        /// </summary>
+        /// <returns></returns>
         public static IQueryable queryAllsupplier()
         {
             CKSJKEntities entit = new CKSJKEntities();
