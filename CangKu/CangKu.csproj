@@ -124,7 +124,6 @@
     <Compile Include="Controllers\CJW\JSController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TLP\EntrepotController.cs" />
-    <Compile Include="Controllers\ZZY\MainController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -700,9 +699,9 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\TZ\" />
+    <Folder Include="Controllers\ZZY\" />
     <Folder Include="Models\" />
     <Folder Include="upload\" />
-    <Folder Include="Views\Main\" />
     <Folder Include="Views\MoBan\" />
   </ItemGroup>
   <ItemGroup>
